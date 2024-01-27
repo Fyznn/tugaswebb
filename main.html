@@ -1,0 +1,60 @@
+<html>
+<title>Nampilin Burung</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+<div class="w3-container" style="background-image: url(banner.jpg);">
+    <center>
+        <h2>BIRDS</h2>
+        <p>Figo Immanuel Manuputty, IF-7, 10123282</p>
+    </center>
+</div>
+
+
+<div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button" onclick="birb('Cendrawasih')">Cendrawasih</button>
+    <button class="w3-bar-item w3-button" onclick="birb('Eagles')">Eagles</button>
+    <button class="w3-bar-item w3-button" onclick="birb('Woodpecker')">Woodpecker</button>
+    <button class="w3-bar-item w3-button" onclick="birb('Pigeon')">Pigeon</button>
+</div>
+
+<div id="Cendrawasih" class="w3-container bird w3-animate-fading" style="display:none">
+    <h2>Cendrawasih</h2>
+    <p>The bird which has a mix of more than three vibrant colors on their feathers are originated from this island. Its exceptional beauty makes Cendrawasih named "The Bird of Paradise" by the British people, who previously refused to believe in its existence because of their beauty. Cendrawasih was used as a gift for the Kings in 1522 after the European acknowledging the bird's existence.</p>
+    <img src="cendrawasih.jpg">
+</div>
+
+<div id="Eagles" class="w3-container bird w3-animate-bottom" style="display:none">
+    <h2>Eagles</h2>
+    <p>Eagles are large, powerfully-built birds of prey, with heavy heads and beaks. Even the smallest eagles, such as the booted eagle (Hieraaetus pennatus), which is comparable in size to a common buzzard (Buteo buteo) or red-tailed hawk (B. jamaicensis), have relatively longer and more evenly broad wings, and more direct, faster flight – despite the reduced size of aerodynamic feathers. Most eagles are larger than any other raptors apart from some vultures.</p>
+    <img src="eagle.jpg">
+</div>
+
+<div id="Woodpecker" class="w3-container bird w3-animate-top" style="display:none">
+    <h2>Woodpecker</h2>
+    <p>Woodpeckers are part of the bird family Picidae, which also includes the piculets, wrynecks and sapsuckers.[1] Members of this family are found worldwide, except for Australia, New Guinea, New Zealand, Madagascar and the extreme polar regions. Most species live in forests or woodland habitats, although a few species are known that live in treeless areas, such as rocky hillsides and deserts, and the Gila woodpecker specialises in exploiting cacti.</p>
+    <img src="woodpecker.jpg">
+</div>
+
+<div id="Pigeon" class="w3-container bird w3-animate-zoom" style="display:none">
+    <h2>Pigeon</h2>
+    <p>Columbidae  is a bird family consisting of doves and pigeons. It is the only family in the order Columbiformes. These are stout-bodied birds with short necks and short slender bills that in some species feature fleshy ceres. They primarily feed on plants, and can be taxonomically divided amongst granivores, that feed mostly on the ground on seeds, and frugivores, that feed mostly on fruits, from branches. The family occurs worldwide, often in close proximity with humans, but the greatest variety is in the Indomalayan and Australasian realms.</p>
+    <img src="pigeon.jpg">
+</div>
+
+<script>
+    function birb(birdname) 
+    {
+        let i;
+        let x = document.getElementsByClassName("bird");
+        for (i = 0; i < x.length; i++) 
+        {
+            x[i].style.display = "none";
+        }
+        document.getElementById(birdname).style.display = "block";
+    }
+</script>
+
+</body>
+</html>
